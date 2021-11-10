@@ -19,13 +19,13 @@
         body {
             background-image: url(./picture/weather.gif);
             background-repeat: no-repeat;
-            height: 100vh;
-            background-size: cover;
+            /* height: 100vh; */
+             background-size: cover;  
             color: white;
         }
 
         #loc_name {
-            width: 50vh;
+            width: 30%;
             padding: 6px;
             border-radius: 5px;
             border-color: black;
@@ -40,7 +40,7 @@
 
         #bttn {
             border-radius: 10px;
-            width: 2%;
+            width: 7%;
             height: 5%;
             background-color: black;
             border-color: white;
@@ -48,7 +48,7 @@
         }
 
         #date {
-            margin-left: -17%;
+            margin-left: -14%;
             /* text-align: 10%; */
         }
 
@@ -107,7 +107,7 @@
         let html_data = ``
         html_data += `body{
              background-image:url(./picture/pexels-photo-209831.jpeg);
-             background-repeat:no-repeat;
+            //  background-repeat:no-repeat;
         }
         #loc{
             text-align: left;      
@@ -117,8 +117,8 @@
         html_update += `
         <div id="inner">
         <p id="loc"style="margin-left:-18%;text-align:center" > <i class="fas fa-map-marker-alt"></i> <biggest >  ${location_name}</biggest>
-          <br> <p id="date"></p> <p id="temp"style="margin-left:-20%;" > <i class="fas fa-cloud-sun-rain"></i>  ${temperature}<span>&#8451;</span>, ${weather_type}</p>
-        <p style="margin-left:-25%;text-align:center;"><i class="fas fa-wind"></i> ${wind_speed}</p>
+          <br> <p id="date"></p> <p id="temp"style="margin-left:-15%;" > <i class="fas fa-cloud-sun-rain"></i>  ${temperature}<span>&#8451;</span>, ${weather_type}</p>
+        <p style="margin-left:-21%;text-align:center;"><i class="fas fa-wind"></i> ${wind_speed}</p>
         </div>`
         document.querySelector("#update").innerHTML = html_update
         // document.getElementById("#date").innerHTML=Date()
